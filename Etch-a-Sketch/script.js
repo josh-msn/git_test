@@ -1,5 +1,13 @@
 let squareQuantity = 10;
 
+document.addEventListener("DOMContentLoaded", function () {
+  // creating inital grid
+  createGrid(squareQuantity);
+
+  document.getElementById("input-btn").addEventListener("click", userGrid);
+  document.getElementById("clear-btn").addEventListener("click", clearGrid);
+});
+
 function createSquare(squareQuantity) {
   const square = document.createElement("div");
   const squareSize = 480 / squareQuantity;
@@ -8,6 +16,7 @@ function createSquare(squareQuantity) {
   square.className = "square";
   square.style.width = squareWidth;
   square.style.height = squareHeight;
+  square.style.opacity = "1";
   document.getElementById("container").appendChild(square);
 }
 
@@ -23,11 +32,12 @@ function createGrid(squareQuantity) {
   });
 }
 
-// changing the color after hovered square
+// changing the opacity
 function changeColor() {
-  this.className = "square darken-25";
+  this.style.opacity = this.style.opacity - 0.1;
 }
 
+//Clearing Grid before creating a new one
 function clearDom() {
   const container = document.getElementById("container");
   container.innerHTML = "";
@@ -44,18 +54,9 @@ function userGrid() {
   }
   clearDom();
   createGrid(squareQuantity);
-  return squareQuantity;
 }
 
 function clearGrid() {
   clearDom();
   createGrid(squareQuantity);
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  // creating inital grid
-  createGrid(squareQuantity);
-
-  document.getElementById("input-btn").addEventListener("click", userGrid);
-  document.getElementById("clear-btn").addEventListener("click", clearGrid);
-});
