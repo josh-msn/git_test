@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(95, 94, 95);
+}
+
+.content-wrapper {
+  max-width: 480px;
+  margin: auto;
+  margin-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+}
+
+#input-btn,
+#clear-btn {
+  width: 220px;
+  height: 30px;
+  margin: 5px;
+  justify-content: center;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#input-btn,
+#clear-btn:hover {
+  cursor: pointer;
+}
+
+.square {
+  box-sizing: border-box;
+  border: 1px solid rgb(236, 236, 236);
+  background-color: white;
+}
+
+.square:hover {
+  background-color: rgb(170, 170, 170);
+  cursor: pointer;
+}
+
+.darken-25 {
+  background-color: rgba(0, 0, 0, 0.295);
+}
+
+.darken-50 {
+  background-color: rgba(0, 0, 0, 0.486);
+}
+
+.darken-75 {
+  background-color: rgba(0, 0, 0, 0.719);
+}
+
+.darken-100 {
+  background-color: rgb(0, 0, 0);
+}
