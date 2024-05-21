@@ -1,0 +1,80 @@
+body {
+  background-color: rgb(75, 75, 75);
+}
+
+.calc-container {
+  background-color: rgb(29, 29, 29);
+  padding: 20px;
+  max-width: 300px;
+}
+
+output {
+  font-size: 4rem;
+  color: white;
+  width: 100%;
+  padding: 5px;
+}
+
+button {
+  color: white;
+  background-color: rgb(63, 62, 62);
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  margin: 3px;
+  font-weight: 700;
+  font-size: large;
+}
+
+button:hover {
+  background-color: rgb(242, 243, 170);
+  color: black;
+  cursor: pointer;
+  transform: translateY(-0.2rem);
+  transition-duration: 0.2s;
+}
+
+.display {
+  height: 70px;
+  background-color: rgb(64, 64, 65);
+  width: 100%;
+  border-radius: 5px;
+  margin: 0px auto 10px auto;
+  text-align: end;
+}
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-nmbrs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#clear,
+#delete {
+  width: 145px;
+}
+
+#clear:hover,
+#delete:hover {
+  background-color: rgb(255, 142, 49);
+  color: black;
+}
+
+#divide:hover,
+#mult:hover,
+#sub:hover,
+#add:hover,
+#equal:hover {
+  background-color: rgb(84, 255, 113);
+  color: black;
+}
