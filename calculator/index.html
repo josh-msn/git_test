@@ -9,7 +9,7 @@
   <body>
     <div class="calc-container">
       <div class="display">
-        <output id="output" name="result">60</output>
+        <output id="output" name="result"></output>
       </div>
       <div class="button-row">
         <button type="button" id="clear">clear</button>
@@ -17,28 +17,34 @@
       </div>
       <div class="button-nmbrs">
         <div class="button-column">
-          <button type="button" value="7" id="7">7</button>
-          <button type="button" value="4" id="4">4</button>
-          <button type="button" value="1" id="1">1</button>
-          <button type="button" value="." id="dot">.</button>
+          <button type="button" class="num-button" value="7" id="7">7</button>
+          <button type="button" class="num-button" value="4" id="4">4</button>
+          <button type="button" class="num-button" value="1" id="1">1</button>
+          <button type="button" class="num-button" value="." id="dot">.</button>
         </div>
         <div class="button-column">
-          <button type="button" value="8" id="8">8</button>
-          <button type="button" value="5" id="5">5</button>
-          <button type="button" value="2" id="2">2</button>
-          <button type="button" value="0" id="0">0</button>
+          <button type="button" class="num-button" value="8" id="8">8</button>
+          <button type="button" class="num-button" value="5" id="5">5</button>
+          <button type="button" class="num-button" value="2" id="2">2</button>
+          <button type="button" class="num-button" value="0" id="0">0</button>
         </div>
         <div class="button-column">
-          <button type="button" value="9" id="9">9</button>
-          <button type="button" value="6" id="6">6</button>
-          <button type="button" value="3" id="3">3</button>
+          <button type="button" class="num-button" value="9" id="9">9</button>
+          <button type="button" class="num-button" value="6" id="6">6</button>
+          <button type="button" class="num-button" value="3" id="3">3</button>
           <button type="button" value="=" id="equal">=</button>
         </div>
         <div class="button-column">
-          <button type="button" value="/" id="divide">/</button>
-          <button type="button" value="*" id="multiply">*</button>
-          <button type="button" value="-" id="subtract">-</button>
-          <button type="button" value="+" id="add">+</button>
+          <button type="button" class="op-button" value="/" id="divide">
+            /
+          </button>
+          <button type="button" class="op-button" value="*" id="multiply">
+            *
+          </button>
+          <button type="button" class="op-button" value="-" id="subtract">
+            -
+          </button>
+          <button type="button" class="op-button" value="+" id="add">+</button>
         </div>
       </div>
     </div>

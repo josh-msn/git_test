@@ -70,11 +70,12 @@ button:hover {
   color: black;
 }
 
-#divide:hover,
-#mult:hover,
-#sub:hover,
-#add:hover,
-#equal:hover {
+.op-button:hover {
   background-color: rgb(84, 255, 113);
+  color: black;
+}
+
+#equal:hover {
+  background-color: rgb(255, 49, 245);
   color: black;
 }
