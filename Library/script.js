@@ -1,3 +1,9 @@
+const myLibrary = [];
+
+document
+  .getElementById("input-btn")
+  .addEventListener("click", addBookToLibrary);
+
 function Book(title, author, pages, read) {
   this.title = title;
   this.author = author;
@@ -8,6 +14,21 @@ function Book(title, author, pages, read) {
   };
 }
 
-const theHobbit = new Book("The Hobbit", "J.R.R. Tolkien", 295, "not read yet");
+function addBookToLibrary() {
+  const title = prompt("Book Title:");
+  const author = prompt("Author:");
+  const pages = prompt("Pages:");
+  const read = prompt("Read");
 
-console.log(theHobbit.info());
+  const newBook = new Book(title, author, pages, read);
+
+  myLibrary.push(newBook);
+  console.log(myLibrary);
+  displayBooks();
+}
+
+function displayBooks() {
+  document.getElementById("book-list").innerHTML = myLibrary;
+  myLibrary.map((item) => {"Titel": Book.title});
+}
+ 
